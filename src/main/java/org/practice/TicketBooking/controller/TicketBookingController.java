@@ -29,6 +29,7 @@ public class TicketBookingController {
 	
 	@RequestMapping(value = "/ticket/{id}")
 	public Optional<Ticket> getTicket(@PathVariable("id") int id){
+		System.out.println("================================ Inside Post Mothod=================================");
 		return ticketBookingService.getTicket(id);
 	}
 	
